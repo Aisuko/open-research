@@ -9,6 +9,33 @@
       #shuffle-container {
         visibility: hidden;
       }
+      .news-ticker {
+        background: #2c3e50;
+        color: white;
+        padding: 8px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .news-ticker-content {
+        display: inline-block;
+        animation: scroll-left 25s linear infinite;
+        transform: translateX(0%);
+      }
+      @keyframes scroll-left {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+      }
+      .news-label {
+        background: #3498db;
+        color: white;
+        padding: 2px 8px;
+        margin-right: 15px;
+        font-weight: bold;
+        border-radius: 3px;
+      }
     </style>
     <noscript><style>
       #shuffle-container {
@@ -68,6 +95,13 @@
     <div class="container sec" id="intro">
       <div style="text-align: center;">
         <font style="color: #8c1515; font-weight: bold; font-size: 1.2em"> The past project please see <a href="https://kaggle.com/writeups/aisuko/rmit-hackathon-2025">RMIT Hackathon 2025</a>. </font>
+      </div>
+    </div>
+    <!-- News Ticker -->
+    <div class="news-ticker">
+      <div class="news-ticker-content">
+        <span class="news-label">LATEST NEWS</span>
+        🔬 The research is in the processing • 🎯 Next hackathon event is under designing • 🚀 Stay tuned for exciting updates from The Black Logit team
       </div>
     </div>
     <!-- Staff Info -->
